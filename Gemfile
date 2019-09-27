@@ -60,3 +60,52 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#Railsのページ遷移高速化
+gem 'turbolinks'
+#hamlが使えるように
+gem 'haml-rails'
+
+# UI/UX
+gem 'jquery-rails'
+gem 'coffee-rails'
+gem 'sass-rails'
+gem 'fog-aws'
+# JSのコード軽量化ライブラリ。UglifyJS2をrubyで使えるようにしたもの
+gem 'uglifier'
+# 元号表示(平成や昭和など)に対応。案外使える
+gem 'wareki'
+
+# ユーザー機能導入
+gem 'devise'
+# devise日本語化
+gem 'devise-i18n'
+
+# 役割定義
+gem 'cancancan'
+
+# デバッグ用
+gem 'pry-rails'
+
+# アップロード用
+gem 'carrierwave'
+# 画像リサイズ用
+gem 'mini_magick'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
+
+#テーブル省略
+gem 'active_hash'
+
+# パンくず
+gem 'gretel'
+# font-awesome,ver5を利用できる
+gem 'font-awesome-rails'
+
+#ロボット認証
+gem "recaptcha", require: "recaptcha/rails"
+
+# heroku
+gem 'sqlite3'
